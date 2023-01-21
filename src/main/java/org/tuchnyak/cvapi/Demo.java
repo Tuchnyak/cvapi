@@ -110,7 +110,7 @@ public class Demo {
                 .firstName("George")
                 .lastName("Shchennikov")
                 .email("georgii.o.sv@gmail.com")
-                .linkedInnLink("https://www.linkedin.com/in/george-sv//")
+                .linkedInnLink("https://www.linkedin.com/in/george-sv/")
                 .location(new Location("Armenia", "Yerevan"))
                 .isReadyToRelocate(true)
                 .isVisaSponsorshipRequired(true)
