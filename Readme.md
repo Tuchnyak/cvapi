@@ -8,3 +8,140 @@ Prepare JSON with info about your developer experience and send it. That's all. 
 Maybe... In a future :)
 
 **If you have idea how to improve this - feel free to join!**
+
+## Example - JSON
+
+```json
+{
+  "applicant": {
+    "firstName": "George",
+    "lastName": "Shchennikov",
+    "location": {
+      "country": "Armenia",
+      "city": "Yerevan"
+    },
+    "email": "georgii.o.sv@gmail.com",
+    "linkedInnLink": "https://www.linkedin.com/in/george-sv/",
+    "readyToRelocate": true,
+    "visaSponsorshipRequired": true
+  },
+  "summary": [
+    "9+ years of engineering experience, almost 4 of them in software developing services for financial systems (mostly using Java) both from scratch and diving into an existing codebase.",
+    "Took part in the process of transferring the legacy systems to microservices.",
+    "Last role: I was a backend software engineer (Java, Kotlin) in the Sberbank, payments and transfers team."
+  ],
+  "skills": [
+    {
+      "type": "LANGUAGES",
+      "list": [
+        "Java",
+        "Kotlin",
+        "SQL"
+      ]
+    },
+    {
+      "type": "TECHNOLOGIES",
+      "list": [
+        "Spring",
+        "SOA/REST/Web services",
+        "Maven",
+        "Gradle",
+        "JUnit",
+        "Kafka",
+        "Oracle AQ",
+        "OpenShift",
+        "Selenium"
+      ]
+    },
+    {
+      "type": "TOOLS",
+      "list": [
+        "Git",
+        "Jira/Confluence/Bitbucket"
+      ]
+    },
+    {
+      "type": "METHODOLOGY",
+      "list": [
+        "Scrum",
+        "Kanban"
+      ]
+    },
+    {
+      "type": "DATABASES",
+      "list": [
+        "Oracle DB",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "type": "IDE",
+      "list": [
+        "IntelliJ IDEA",
+        "Eclipse"
+      ]
+    }
+  ],
+  "accomplishments": [
+    "Developed new functionality in the legacy system that provides subscriptions on fines information for bank customers",
+    "Split a monolithic system into microservices using the inner proprietary message-driven framework (Akka-like)",
+    "Developed one of the subsystems using OpenShift services for new payment API between bank and government, both from scratch and forking existing service"
+  ],
+  "workExperiences": [
+    {
+      "begin": [
+        2019,
+        3
+      ],
+      "end": [
+        2023,
+        1
+      ],
+      "role": "Software Engineer",
+      "employer": "Sberbank",
+      "location": {
+        "country": "Russia",
+        "city": "Saint Petersburg"
+      },
+      "dutiesDescription": "providing payments and information about fines and taxes on interaction with government APIs, team of 9",
+      "technologies": {
+        "type": "TECHNOLOGIES",
+        "list": [
+          "Java",
+          "Kotlin",
+          "Xslt",
+          "Spring",
+          "Maven",
+          "Git"
+        ]
+      }
+    }
+  ],
+  "education": [
+    {
+      "beginYear": 2019,
+      "endYear": 2019,
+      "location": {
+        "country": "Russia",
+        "city": "Kazan"
+      },
+      "type": "ADVANCED_TRAINING_COURSE",
+      "fieldOfStudy": "Software developer using Java EE technologies",
+      "organizationName": "Innopolis University"
+    },
+    {
+      "beginYear": 2006,
+      "endYear": 2012,
+      "location": {
+        "country": "Russia",
+        "city": "Saint Petersburg"
+      },
+      "type": "UNIVERSITY",
+      "educationalLevel": "Master’s Degree",
+      "fieldOfStudy": "Optotechnics",
+      "organizationName": "The National Research University of Information Technologies, Mechanics and Optics (ITMO University)",
+      "additionalInformation": "Department of Applied and Computer Optics"
+    }
+  ]
+}
+```
