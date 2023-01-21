@@ -1,8 +1,10 @@
 package org.tuchnyak.cvapi.model;
 
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDate;
+import java.time.YearMonth;
 
 @AllArgsConstructor
 @Getter
@@ -10,7 +12,7 @@ import java.time.LocalDate;
 @EqualsAndHashCode
 public abstract class AbstractTimelineItem {
 
-    private LocalDate begin;
-    private LocalDate end;
+    private YearMonth begin;
+    private YearMonth end;
 
 }

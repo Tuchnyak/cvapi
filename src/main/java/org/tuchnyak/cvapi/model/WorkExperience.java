@@ -3,19 +3,18 @@ package org.tuchnyak.cvapi.model;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.time.YearMonth;
 
-@Data
 @Builder
-@EqualsAndHashCode(callSuper = true)
-public class WorkExperience extends AbstractTimelineItem {
+@Data
+public class WorkExperience {
 
+    private YearMonth begin;
+    private YearMonth end;
     private String role;
     private String employer;
     private Location location;
     private String dutiesDescription;
     private Skill technologies;
 
-    public WorkExperience(LocalDate begin, LocalDate end) {
-        super(begin, end);
-    }
 }
