@@ -6,6 +6,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.tuchnyak.cvapi.model.*;
 
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.time.Month;
 import java.time.YearMonth;
 import java.util.List;
@@ -29,8 +34,8 @@ public class Demo {
         mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         try {
             String json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(cv);
-            System.out.println(json);
-        } catch (JsonProcessingException e) {
+            Files.writeString(Paths.get("./src/main/resources/example.json"), json, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
